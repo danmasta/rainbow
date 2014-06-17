@@ -34,7 +34,6 @@ app.directive('rainbow', ['$window', '$interval', '$timeout', function($window, 
       for( var i = 0; i < 360; i++){
         $scope.testitems.push({title:'test item ' + i, value:i});
       }
-      $scope.magic();
     }
   };
 }]);

@@ -1,0 +1,22 @@
+// app.less
+.container{ width:100%; padding:0;}
+[data-message]{
+  position:fixed; top:0; left:0; width:100%;
+  .message{
+    max-width:75%; margin:0 auto; text-align:center;
+    span{
+      margin-left:10px; white-space:nowrap;
+      &:first-child{ margin-left:0;}
+    }
+  }
+}
+
+[data-rainbow]{
+  list-style:none; padding:0; margin:0;
+  li{ margin:0; padding:0; border:none; display:inline-block; text-align:center; color:rgba(255,255,255,0); width:10%; height:auto; padding-bottom:10%; float:left; transition:all 200ms linear;}
+}
+
+.phrase{
+  position:fixed; height:100%; width:100%; top:0; left:0; display:table; pointer-events:none;
+  span{ display:table-cell; text-align:center; vertical-align:middle; font-size:40px; color:#fff; transition:all 200ms linear; line-height:1; margin:0; padding:0;}
+}
